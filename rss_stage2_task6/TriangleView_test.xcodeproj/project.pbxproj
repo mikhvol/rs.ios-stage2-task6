@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F42DFD4B25DF0D9700F756B7 /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F42DFD4A25DF0D9700F756B7 /* GalleryCollectionViewCell.m */; };
+		F42DFD5025E0575B00F756B7 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F42DFD4F25E0575B00F756B7 /* CircleView.m */; };
+		F42DFD5525E0644C00F756B7 /* RectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F42DFD5425E0644C00F756B7 /* RectangleView.m */; };
+		F42DFD5A25E1A45B00F756B7 /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42DFD5925E1A45B00F756B7 /* PlayerController.m */; };
+		F42DFD5F25E1A4ED00F756B7 /* ModalImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42DFD5E25E1A4ED00F756B7 /* ModalImageController.m */; };
+		F42DFD6325E1AB1E00F756B7 /* UIImageView+AssetFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = F42DFD6225E1AB1E00F756B7 /* UIImageView+AssetFetch.m */; };
+		F432D1C025F0335A003F88B6 /* DivideLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F432D1BF25F0335A003F88B6 /* DivideLineView.m */; };
+		F438491924A3E94300BF4202 /* CellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F438491824A3E94300BF4202 /* CellInfo.m */; };
+		F44E4BD925D9869F00412316 /* NSDate+StringFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E4BD825D9869F00412316 /* NSDate+StringFormat.m */; };
+		F44E4BDD25D9896100412316 /* PHAsset+StringType.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E4BDC25D9896100412316 /* PHAsset+StringType.m */; };
+		F471E282249D670800B30A52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F471E281249D670800B30A52 /* AppDelegate.m */; };
+		F471E285249D670800B30A52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F471E284249D670800B30A52 /* ViewController.m */; };
+		F471E28A249D670A00B30A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F471E289249D670A00B30A52 /* Assets.xcassets */; };
+		F471E28D249D670A00B30A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F471E28B249D670A00B30A52 /* LaunchScreen.storyboard */; };
+		F471E290249D670A00B30A52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F471E28F249D670A00B30A52 /* main.m */; };
+		F471E298249D673D00B30A52 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F471E297249D673D00B30A52 /* TriangleView.m */; };
+		F471E29B249D838800B30A52 /* UIColor+ColorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F471E29A249D838800B30A52 /* UIColor+ColorExtension.m */; };
+		F4B39C4E249E6632004436B9 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B39C4D249E6632004436B9 /* InfoViewController.m */; };
+		F4B39C51249E6647004436B9 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B39C50249E6647004436B9 /* GalleryViewController.m */; };
+		F4B39C54249E6666004436B9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B39C53249E6666004436B9 /* AboutViewController.m */; };
+		F4C0AB4524A4FFA10032FAB1 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C0AB4424A4FFA10032FAB1 /* ScrollViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F42DFD4925DF0D9700F756B7 /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
+		F42DFD4A25DF0D9700F756B7 /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
+		F42DFD4E25E0575B00F756B7 /* CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		F42DFD4F25E0575B00F756B7 /* CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		F42DFD5325E0644C00F756B7 /* RectangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectangleView.h; sourceTree = "<group>"; };
+		F42DFD5425E0644C00F756B7 /* RectangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectangleView.m; sourceTree = "<group>"; };
+		F42DFD5825E1A45B00F756B7 /* PlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlayerController.h; path = TriangleView_test/ViewControllers/PlayerController.h; sourceTree = SOURCE_ROOT; };
+		F42DFD5925E1A45B00F756B7 /* PlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PlayerController.m; path = TriangleView_test/ViewControllers/PlayerController.m; sourceTree = SOURCE_ROOT; };
+		F42DFD5D25E1A4ED00F756B7 /* ModalImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalImageController.h; sourceTree = "<group>"; };
+		F42DFD5E25E1A4ED00F756B7 /* ModalImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalImageController.m; sourceTree = "<group>"; };
+		F42DFD6125E1AB1E00F756B7 /* UIImageView+AssetFetch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AssetFetch.h"; sourceTree = "<group>"; };
+		F42DFD6225E1AB1E00F756B7 /* UIImageView+AssetFetch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AssetFetch.m"; sourceTree = "<group>"; };
+		F432D1BE25F0335A003F88B6 /* DivideLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DivideLineView.h; sourceTree = "<group>"; };
+		F432D1BF25F0335A003F88B6 /* DivideLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DivideLineView.m; sourceTree = "<group>"; };
+		F438491724A3E94300BF4202 /* CellInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellInfo.h; sourceTree = "<group>"; };
+		F438491824A3E94300BF4202 /* CellInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellInfo.m; sourceTree = "<group>"; };
+		F44E4BD725D9869F00412316 /* NSDate+StringFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+StringFormat.h"; sourceTree = "<group>"; };
+		F44E4BD825D9869F00412316 /* NSDate+StringFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+StringFormat.m"; sourceTree = "<group>"; };
+		F44E4BDB25D9896100412316 /* PHAsset+StringType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHAsset+StringType.h"; sourceTree = "<group>"; };
+		F44E4BDC25D9896100412316 /* PHAsset+StringType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+StringType.m"; sourceTree = "<group>"; };
+		F471E27D249D670800B30A52 /* TriangleView_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriangleView_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F471E280249D670800B30A52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F471E281249D670800B30A52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F471E283249D670800B30A52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F471E284249D670800B30A52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F471E289249D670A00B30A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F471E28C249D670A00B30A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F471E28E249D670A00B30A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F471E28F249D670A00B30A52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F471E296249D673D00B30A52 /* TriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		F471E297249D673D00B30A52 /* TriangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		F471E299249D838800B30A52 /* UIColor+ColorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorExtension.h"; sourceTree = "<group>"; };
+		F471E29A249D838800B30A52 /* UIColor+ColorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorExtension.m"; sourceTree = "<group>"; };
+		F4B39C4C249E6632004436B9 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		F4B39C4D249E6632004436B9 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		F4B39C4F249E6647004436B9 /* GalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		F4B39C50249E6647004436B9 /* GalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		F4B39C52249E6666004436B9 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		F4B39C53249E6666004436B9 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		F4C0AB4324A4FFA10032FAB1 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		F4C0AB4424A4FFA10032FAB1 /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F471E27A249D670800B30A52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F471E274249D670800B30A52 = {
+			isa = PBXGroup;
+			children = (
+				F471E27F249D670800B30A52 /* TriangleView_test */,
+				F471E27E249D670800B30A52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F471E27E249D670800B30A52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F471E27D249D670800B30A52 /* TriangleView_test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F471E27F249D670800B30A52 /* TriangleView_test */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0AB4224A4FF210032FAB1 /* Custom Views */,
+				F4C0AB4124A4FEC00032FAB1 /* ViewControllers */,
+				F4B39C4B249E65D2004436B9 /* Extensions */,
+				F4B39C4A249E65A1004436B9 /* TabBarViewControllers */,
+				F471E280249D670800B30A52 /* AppDelegate.h */,
+				F471E281249D670800B30A52 /* AppDelegate.m */,
+				F438491724A3E94300BF4202 /* CellInfo.h */,
+				F438491824A3E94300BF4202 /* CellInfo.m */,
+				F42DFD4925DF0D9700F756B7 /* GalleryCollectionViewCell.h */,
+				F42DFD4A25DF0D9700F756B7 /* GalleryCollectionViewCell.m */,
+				F471E289249D670A00B30A52 /* Assets.xcassets */,
+				F471E28B249D670A00B30A52 /* LaunchScreen.storyboard */,
+				F471E28E249D670A00B30A52 /* Info.plist */,
+				F471E28F249D670A00B30A52 /* main.m */,
+			);
+			path = TriangleView_test;
+			sourceTree = "<group>";
+		};
+		F4B39C4A249E65A1004436B9 /* TabBarViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4B39C4F249E6647004436B9 /* GalleryViewController.h */,
+				F4B39C50249E6647004436B9 /* GalleryViewController.m */,
+				F4B39C4C249E6632004436B9 /* InfoViewController.h */,
+				F4B39C4D249E6632004436B9 /* InfoViewController.m */,
+				F4B39C52249E6666004436B9 /* AboutViewController.h */,
+				F4B39C53249E6666004436B9 /* AboutViewController.m */,
+			);
+			path = TabBarViewControllers;
+			sourceTree = "<group>";
+		};
+		F4B39C4B249E65D2004436B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F471E299249D838800B30A52 /* UIColor+ColorExtension.h */,
+				F471E29A249D838800B30A52 /* UIColor+ColorExtension.m */,
+				F44E4BDB25D9896100412316 /* PHAsset+StringType.h */,
+				F44E4BDC25D9896100412316 /* PHAsset+StringType.m */,
+				F44E4BD725D9869F00412316 /* NSDate+StringFormat.h */,
+				F44E4BD825D9869F00412316 /* NSDate+StringFormat.m */,
+				F42DFD6125E1AB1E00F756B7 /* UIImageView+AssetFetch.h */,
+				F42DFD6225E1AB1E00F756B7 /* UIImageView+AssetFetch.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4C0AB4124A4FEC00032FAB1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F471E283249D670800B30A52 /* ViewController.h */,
+				F471E284249D670800B30A52 /* ViewController.m */,
+				F4C0AB4324A4FFA10032FAB1 /* ScrollViewController.h */,
+				F4C0AB4424A4FFA10032FAB1 /* ScrollViewController.m */,
+				F42DFD5D25E1A4ED00F756B7 /* ModalImageController.h */,
+				F42DFD5E25E1A4ED00F756B7 /* ModalImageController.m */,
+				F42DFD5825E1A45B00F756B7 /* PlayerController.h */,
+				F42DFD5925E1A45B00F756B7 /* PlayerController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4C0AB4224A4FF210032FAB1 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F42DFD4E25E0575B00F756B7 /* CircleView.h */,
+				F42DFD4F25E0575B00F756B7 /* CircleView.m */,
+				F432D1BE25F0335A003F88B6 /* DivideLineView.h */,
+				F432D1BF25F0335A003F88B6 /* DivideLineView.m */,
+				F42DFD5325E0644C00F756B7 /* RectangleView.h */,
+				F42DFD5425E0644C00F756B7 /* RectangleView.m */,
+				F471E296249D673D00B30A52 /* TriangleView.h */,
+				F471E297249D673D00B30A52 /* TriangleView.m */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F471E27C249D670800B30A52 /* TriangleView_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F471E293249D670A00B30A52 /* Build configuration list for PBXNativeTarget "TriangleView_test" */;
+			buildPhases = (
+				F471E279249D670800B30A52 /* Sources */,
+				F471E27A249D670800B30A52 /* Frameworks */,
+				F471E27B249D670800B30A52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriangleView_test;
+			productName = TriangleView_test;
+			productReference = F471E27D249D670800B30A52 /* TriangleView_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F471E275249D670800B30A52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Mike Volkov";
+				TargetAttributes = {
+					F471E27C249D670800B30A52 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F471E278249D670800B30A52 /* Build configuration list for PBXProject "TriangleView_test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F471E274249D670800B30A52;
+			productRefGroup = F471E27E249D670800B30A52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F471E27C249D670800B30A52 /* TriangleView_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F471E27B249D670800B30A52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F471E28D249D670A00B30A52 /* LaunchScreen.storyboard in Resources */,
+				F471E28A249D670A00B30A52 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F471E279249D670800B30A52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F432D1C025F0335A003F88B6 /* DivideLineView.m in Sources */,
+				F44E4BD925D9869F00412316 /* NSDate+StringFormat.m in Sources */,
+				F471E29B249D838800B30A52 /* UIColor+ColorExtension.m in Sources */,
+				F438491924A3E94300BF4202 /* CellInfo.m in Sources */,
+				F471E285249D670800B30A52 /* ViewController.m in Sources */,
+				F42DFD5025E0575B00F756B7 /* CircleView.m in Sources */,
+				F4B39C54249E6666004436B9 /* AboutViewController.m in Sources */,
+				F4B39C4E249E6632004436B9 /* InfoViewController.m in Sources */,
+				F4C0AB4524A4FFA10032FAB1 /* ScrollViewController.m in Sources */,
+				F42DFD5F25E1A4ED00F756B7 /* ModalImageController.m in Sources */,
+				F471E290249D670A00B30A52 /* main.m in Sources */,
+				F42DFD4B25DF0D9700F756B7 /* GalleryCollectionViewCell.m in Sources */,
+				F471E298249D673D00B30A52 /* TriangleView.m in Sources */,
+				F4B39C51249E6647004436B9 /* GalleryViewController.m in Sources */,
+				F42DFD5525E0644C00F756B7 /* RectangleView.m in Sources */,
+				F42DFD6325E1AB1E00F756B7 /* UIImageView+AssetFetch.m in Sources */,
+				F471E282249D670800B30A52 /* AppDelegate.m in Sources */,
+				F42DFD5A25E1A45B00F756B7 /* PlayerController.m in Sources */,
+				F44E4BDD25D9896100412316 /* PHAsset+StringType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F471E28B249D670A00B30A52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F471E28C249D670A00B30A52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F471E291249D670A00B30A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F471E292249D670A00B30A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F471E294249D670A00B30A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AX457DS8DH;
+				INFOPLIST_FILE = TriangleView_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikevolkov.TriangleView-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F471E295249D670A00B30A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AX457DS8DH;
+				INFOPLIST_FILE = TriangleView_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikevolkov.TriangleView-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F471E278249D670800B30A52 /* Build configuration list for PBXProject "TriangleView_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F471E291249D670A00B30A52 /* Debug */,
+				F471E292249D670A00B30A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F471E293249D670A00B30A52 /* Build configuration list for PBXNativeTarget "TriangleView_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F471E294249D670A00B30A52 /* Debug */,
+				F471E295249D670A00B30A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F471E275249D670800B30A52 /* Project object */;
+}
