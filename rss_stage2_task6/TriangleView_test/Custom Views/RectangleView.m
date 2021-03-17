@@ -22,7 +22,6 @@
 }
 
 - (void) setupView {
-    self.frame = CGRectMake(0, 0, 70, 70);
     self.backgroundColor = [UIColor hex:@"0x29C2D1"];
 }
 
@@ -33,15 +32,15 @@
             self.transform = CGAffineTransformMakeTranslation(0.0, self.frame.size.width * 0.1);
         }
                          completion:^(BOOL finished){
-                             [self startAnimationForRectangle:NO];
-                         }];
+            [self startAnimationForRectangle:NO];
+        }];
     } else {
         [UIView animateWithDuration:1.0 animations:^{
             self.transform = CGAffineTransformMakeTranslation(0.0, self.frame.size.width * (-0.1));
         }
                          completion:^(BOOL finished){
-                             [self startAnimationForRectangle:YES];
-                         }];
+            [self startAnimationForRectangle:YES];
+        }];
     }
 }
 

@@ -21,7 +21,6 @@
 }
 
 - (void) setupView {
-    self.frame = CGRectMake(15, 0, 400, 2);
     self.layer.cornerRadius = 2;
     self.clipsToBounds = YES;
     self.backgroundColor = [UIColor lightGrayColor];

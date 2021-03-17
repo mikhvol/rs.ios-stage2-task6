@@ -15,7 +15,6 @@
 {
     self = [super init];
     if (self) {
-        self.frame = CGRectMake(0, 0, 70, 70);
         self.backgroundColor = UIColor.clearColor;
         [self startAnimationForTriangle:YES];
     }
@@ -42,21 +41,17 @@
 - (void) startAnimationForTriangle:(BOOL)flag {
     
     if (flag == YES) {
-        
         [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
             self.transform = CGAffineTransformMakeRotation(M_PI);
         } completion:^(BOOL finished) {
             [self startAnimationForTriangle:NO];
         }];
-        
     } else {
-        
         [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
             self.transform = CGAffineTransformMakeRotation(2*M_PI);
         } completion:^(BOOL finished) {
             [self startAnimationForTriangle:YES];
         }];
-        
     }
 }
 

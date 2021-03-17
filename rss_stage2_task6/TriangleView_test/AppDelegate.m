@@ -61,7 +61,6 @@
     
     UITabBarController* tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[infoNavigationController, galleryNavigationController, aboutNavigationController];
-    tabBarController.selectedIndex = 1;
 
     [vc setupTabBarController:tabBarController];
     

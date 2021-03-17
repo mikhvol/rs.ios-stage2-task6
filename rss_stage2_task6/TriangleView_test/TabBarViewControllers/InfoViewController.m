@@ -26,15 +26,15 @@
     self.navigationItem.title = @"Info";
     
     self.tableView = [[UITableView alloc] init];
-    [self configureFormatter];
-    [self.view addSubview:self.tableView];
-    [self setupConstraints];
+    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.tableView registerClass:[CellInfo class] forCellReuseIdentifier:@"cellId"];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
     
+    [self configureFormatter];
+    [self setupConstraints];
     [self makeAuth];
-    
     [self.tableView reloadData];
 }
 
@@ -44,11 +44,10 @@
 
 - (void) setupConstraints {
     [NSLayoutConstraint activateConstraints:@[
-                        [self.tableView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
-                        [self.tableView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
-                        [self.tableView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
-                        [self.tableView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor]]];
-    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
+                        [self.tableView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor],
+                        [self.tableView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor],
+                        [self.tableView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor],
+                        [self.tableView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor]]];
 }
 
 - (void)configureFormatter {
@@ -83,10 +82,8 @@
 }
 
 - (void) setupScrollViewController {
-    
     self.scrollViewController = [[ScrollViewController alloc] init];
     self.scrollViewController.view.frame = self.navigationController.view.frame;
-    
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -217,7 +214,6 @@
         }
     });
 }
-
 
 - (NSArray *)indexPathsFromIndexSet:(NSIndexSet *)indexSet {
     NSMutableArray *paths = [[NSMutableArray alloc] init];

@@ -14,6 +14,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self setupViews];
+        [self setupConstraints];
     }
     return self;
 }
@@ -28,26 +29,52 @@
 }
 
 - (void) setupViews {
-    
-    self.fileImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.origin.x + 5, self.frame.origin.y + 2, 86, 86)];
+    self.fileImageView = [[UIImageView alloc] init];
+    self.fileImageView.translatesAutoresizingMaskIntoConstraints = NO;
     self.fileImageView.image = [UIImage imageNamed:@"apple.pdf"];
     self.fileImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.fileImageView.clipsToBounds = YES;
     [self addSubview:self.fileImageView];
     
-    self.fileNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.fileImageView.frame.size.width + 20, self.fileImageView.frame.origin.y + 17, 130, 20)];
+    self.fileNameLabel = [[UILabel alloc] init];
+    self.fileNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    self.fileNameLabel.adjustsFontSizeToFitWidth = YES;
     [self.fileNameLabel setFont:[UIFont systemFontOfSize:17.0 weight:UIFontWeightSemibold]];
     self.fileNameLabel.text = @"name_file.jpg";
     [self addSubview:self.fileNameLabel];
     
-    self.fileThumbnailImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.fileNameLabel.frame.origin.x, self.fileNameLabel.frame.size.height + 33, 15, 20)];
+    self.fileThumbnailImageView = [[UIImageView alloc] init];
+    self.fileThumbnailImageView.translatesAutoresizingMaskIntoConstraints = NO;
     self.fileThumbnailImageView.image = [UIImage imageNamed:@"other.pdf"];
     [self addSubview:self.fileThumbnailImageView];
     
-    self.fileSizeLabel = [[UILabel alloc] initWithFrame:CGRectMake( self.fileThumbnailImageView.frame.origin.x + self.fileThumbnailImageView.frame.size.width + 5, self.fileThumbnailImageView.frame.origin.y + 2.5, 150, 15)];
+    self.fileSizeLabel = [[UILabel alloc] init];
+    self.fileSizeLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    self.fileSizeLabel.adjustsFontSizeToFitWidth = YES;
     [self.fileSizeLabel setFont:[UIFont systemFontOfSize:12.0 weight:UIFontWeightRegular]];
     self.fileSizeLabel.text = @"9999x9999";
     [self addSubview:self.fileSizeLabel];
-    
 }
+
+- (void) setupConstraints {
+    [NSLayoutConstraint activateConstraints:@[
+        [self.fileImageView.heightAnchor constraintEqualToConstant:86],
+        [self.fileImageView.widthAnchor constraintEqualToConstant:86],
+        [self.fileImageView.topAnchor constraintEqualToAnchor:self.topAnchor constant:2],
+        [self.fileImageView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:5],
+        [self.fileNameLabel.heightAnchor constraintEqualToConstant:20],
+        [self.fileNameLabel.widthAnchor constraintEqualToConstant:150],
+        [self.fileNameLabel.topAnchor constraintEqualToAnchor:self.topAnchor constant:10],
+        [self.fileNameLabel.leadingAnchor constraintEqualToAnchor:self.fileImageView.trailingAnchor constant:30],
+        [self.fileThumbnailImageView.heightAnchor constraintEqualToConstant:20],
+        [self.fileThumbnailImageView.widthAnchor constraintEqualToConstant:15],
+        [self.fileThumbnailImageView.topAnchor constraintEqualToAnchor:self.fileNameLabel.bottomAnchor constant:20],
+        [self.fileThumbnailImageView.leadingAnchor constraintEqualToAnchor:self.fileImageView.trailingAnchor constant:40],
+        [self.fileSizeLabel.heightAnchor constraintEqualToConstant:20],
+        [self.fileSizeLabel.widthAnchor constraintEqualToConstant:100],
+        [self.fileSizeLabel.topAnchor constraintEqualToAnchor:self.fileNameLabel.bottomAnchor constant:20],
+        [self.fileSizeLabel.leadingAnchor constraintEqualToAnchor:self.fileThumbnailImageView.trailingAnchor constant:10]
+    ]];
+}
+
 @end

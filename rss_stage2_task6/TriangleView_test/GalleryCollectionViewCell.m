@@ -15,19 +15,21 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setupViews];
+        [self setupConstraints];
     }
     return self;
 }
 
 - (void) setupViews {
-    
     self.fileImageView = [[UIImageView alloc] init];
     self.fileImageView.image = [UIImage imageNamed:@"apple.pdf"];
-    self.fileImageView.translatesAutoresizingMaskIntoConstraints = false;
+    self.fileImageView.translatesAutoresizingMaskIntoConstraints = NO;
     self.fileImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.fileImageView.clipsToBounds = YES;
     [self addSubview:self.fileImageView];
-    
+}
+
+- (void) setupConstraints {
     [NSLayoutConstraint activateConstraints:@[
         [self.fileImageView.topAnchor constraintEqualToAnchor:self.topAnchor],
         [self.fileImageView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor],

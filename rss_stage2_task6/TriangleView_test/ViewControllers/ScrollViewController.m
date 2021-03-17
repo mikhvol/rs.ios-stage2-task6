@@ -34,9 +34,11 @@
     }
     return self;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupViews];
+    [self setupConstraints];
 }
 
 - (void) getImageFromAsset:(PHAsset*)asset {
@@ -51,47 +53,82 @@
 }
 
 - (void) setupViews {
-    
     self.scrollView = [[UIScrollView alloc] init];
     self.scrollView.frame = self.view.bounds;
+    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     self.scrollView.backgroundColor = [UIColor hex:@"0xFFFFFF"];
     [self.view addSubview:self.scrollView];
 
     self.fileImageView = [[UIImageView alloc] init];
-    self.fileImageView.frame = CGRectMake(self.scrollView.frame.origin.x + 15, self.scrollView.frame.origin.y + 15, self.scrollView.frame.size.width - 30, self.scrollView.frame.size.width - 30);
     self.fileImageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.fileImageView.translatesAutoresizingMaskIntoConstraints = NO;
     [self getImageFromAsset:self.asset];
-    self.scrollView.contentSize = self.scrollView.bounds.size;
     [self.scrollView addSubview:self.fileImageView];
     
-    self.creationDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.fileImageView.frame.origin.x, self.fileImageView.bounds.size.height + self.fileImageView.frame.origin.y + 30, 350, 20)];
+    self.creationDateLabel = [[UILabel alloc] init];
     self.creationDateLabel.text = [NSString stringWithFormat:@"Creation date: %@", [self.asset.creationDate withFormat:@"HH:mm:ss dd.MM.yyyy"]];
+    self.creationDateLabel.adjustsFontSizeToFitWidth = YES;
     [self.creationDateLabel setFont:[UIFont systemFontOfSize:17.0 weight:UIFontWeightSemibold]];
     [self.creationDateLabel setTextColor:[UIColor hex:@"0x707070"]];
+    self.creationDateLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.scrollView addSubview:self.creationDateLabel];
     
-    self.modificationDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.creationDateLabel.frame.origin.x, self.creationDateLabel.bounds.size.height + self.creationDateLabel.frame.origin.y + 10, 350, 20)];
+    self.modificationDateLabel = [[UILabel alloc] init];
     self.modificationDateLabel.text = [NSString stringWithFormat:@"Modification date: %@", [self.asset.modificationDate withFormat:@"HH:mm:ss dd.MM.yyyy"]];
+    self.modificationDateLabel.adjustsFontSizeToFitWidth = YES;
     [self.modificationDateLabel setFont:[UIFont systemFontOfSize:17.0 weight:UIFontWeightSemibold]];
     [self.modificationDateLabel setTextColor:[UIColor hex:@"0x707070"]];
+    self.modificationDateLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.scrollView addSubview:self.modificationDateLabel];
     
-    self.typeLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.modificationDateLabel.frame.origin.x, self.modificationDateLabel.bounds.size.height + self.modificationDateLabel.frame.origin.y + 10, 250, 20)];
+    self.typeLabel = [[UILabel alloc] init];
     self.typeLabel.text = [NSString stringWithFormat:@"Type: %@", [self.asset stringType]];
+    self.typeLabel.adjustsFontSizeToFitWidth = YES;
     [self.typeLabel setFont:[UIFont systemFontOfSize:17.0 weight:UIFontWeightSemibold]];
     [self.typeLabel setTextColor:[UIColor hex:@"0x707070"]];
+    self.typeLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.scrollView addSubview:self.typeLabel];
     
-    self.activityButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width * 0.75, 55)];
-    self.activityButton.center = CGPointMake(self.scrollView.center.x, self.scrollView.center.y * 1.65);
+    self.activityButton = [[UIButton alloc] init];
     self.activityButton.backgroundColor = [UIColor hex:@"0xF9CC78"];
     self.activityButton.layer.cornerRadius = 27.5;
     self.activityButton.clipsToBounds = YES;
     [self.activityButton setTitle:@"Share" forState:UIControlStateNormal];
     [self.activityButton setTitleColor:[UIColor hex:@"0x101010"] forState:UIControlStateNormal];
+    self.activityButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.activityButton.titleLabel setFont:[UIFont systemFontOfSize:20.0 weight:UIFontWeightMedium]];
     [self.activityButton addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
     [self.scrollView addSubview:self.activityButton];
+}
+
+- (void) setupConstraints {
+    [NSLayoutConstraint activateConstraints:@[
+        [self.scrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
+        [self.scrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
+        [self.scrollView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor],
+        [self.scrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
+        [self.fileImageView.heightAnchor constraintEqualToConstant:self.scrollView.frame.size.width - 30],
+        [self.fileImageView.widthAnchor constraintEqualToConstant:self.scrollView.frame.size.width - 30],
+        [self.fileImageView.centerXAnchor constraintEqualToAnchor:self.scrollView.centerXAnchor],
+        [self.fileImageView.topAnchor constraintEqualToAnchor:self.scrollView.topAnchor constant:15],
+        [self.creationDateLabel.heightAnchor constraintEqualToConstant:20],
+        [self.creationDateLabel.widthAnchor constraintEqualToConstant:350],
+        [self.creationDateLabel.leadingAnchor constraintEqualToAnchor:self.fileImageView.leadingAnchor],
+        [self.creationDateLabel.topAnchor constraintEqualToAnchor:self.fileImageView.bottomAnchor constant:30],
+        [self.modificationDateLabel.heightAnchor constraintEqualToConstant:20],
+        [self.modificationDateLabel.widthAnchor constraintEqualToConstant:350],
+        [self.modificationDateLabel.leadingAnchor constraintEqualToAnchor:self.creationDateLabel.leadingAnchor],
+        [self.modificationDateLabel.topAnchor constraintEqualToAnchor:self.creationDateLabel.bottomAnchor constant:10],
+        [self.typeLabel.heightAnchor constraintEqualToConstant:20],
+        [self.typeLabel.widthAnchor constraintEqualToConstant:350],
+        [self.typeLabel.leadingAnchor constraintEqualToAnchor:self.modificationDateLabel.leadingAnchor],
+        [self.typeLabel.topAnchor constraintEqualToAnchor:self.modificationDateLabel.bottomAnchor constant:10],
+        [self.activityButton.heightAnchor constraintEqualToConstant:55],
+        [self.activityButton.widthAnchor constraintEqualToConstant:self.scrollView.frame.size.width * 0.75],
+        [self.activityButton.centerXAnchor constraintEqualToAnchor:self.scrollView.centerXAnchor],
+        [self.activityButton.topAnchor constraintEqualToAnchor:self.typeLabel.bottomAnchor constant:50],
+        [self.activityButton.bottomAnchor constraintEqualToAnchor:self.scrollView.bottomAnchor constant: -10]
+    ]];
 }
 
 - (void) share {

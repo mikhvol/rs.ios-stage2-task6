@@ -19,29 +19,29 @@
 
 @implementation GalleryViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self.galleryCollectionView.collectionViewLayout invalidateLayout];
-}
-
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-    [self.galleryCollectionView.collectionViewLayout invalidateLayout];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.navigationItem.title = @"Gallery";
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
     self.galleryCollectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:layout];
     [self.galleryCollectionView setDataSource:self];
     [self.galleryCollectionView setDelegate:self];
     [self.galleryCollectionView registerClass:[GalleryCollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
+    self.galleryCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.galleryCollectionView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:self.galleryCollectionView];
     [self getDataWithAuth];
     [self.galleryCollectionView reloadData];
+    [self setupConstraints];
+}
+
+- (void) setupConstraints {
+    [NSLayoutConstraint activateConstraints: @[
+        [self.galleryCollectionView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor],
+        [self.galleryCollectionView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor],
+        [self.galleryCollectionView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor],
+        [self.galleryCollectionView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor]
+    ]];
 }
 
 - (BOOL)prefersStatusBarHidden {

@@ -16,7 +16,6 @@
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) PHAsset *asset;
 @property (nonatomic, strong) UIScrollView *scrollView;
-
 @property (nonatomic, strong) UIPanGestureRecognizer* recognizer;
 
 @end
@@ -44,6 +43,8 @@
     
     self.scrollView.contentSize = self.imageView.image.size;
     self.scrollView.delegate = self;
+    
+    [self setupConstraints];
 }
 
 - (void)closingHandler:(UIPanGestureRecognizer *)sender {
@@ -70,8 +71,7 @@
     }
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void) setupConstraints {
     [NSLayoutConstraint activateConstraints:@[
         [self.scrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
         [self.scrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
@@ -85,7 +85,6 @@
         [self.imageView.centerYAnchor constraintEqualToAnchor:self.scrollView.centerYAnchor],
         [self.imageView.centerXAnchor constraintEqualToAnchor:self.scrollView.centerXAnchor]
     ]];
-    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
