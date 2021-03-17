@@ -230,7 +230,7 @@
     [self.figuresStackView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
     [self.secondLine.heightAnchor constraintEqualToConstant:2],
     [self.secondLine.widthAnchor constraintEqualToConstant:500],
-    [self.secondLine.topAnchor constraintEqualToAnchor:self.figuresStackView.bottomAnchor constant:15],
+    [self.secondLine.topAnchor constraintEqualToAnchor:self.figuresStackView.bottomAnchor constant:5],
     [self.secondLine.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
     [self.goToStartButton.heightAnchor constraintEqualToConstant:55],
     [self.goToStartButton.widthAnchor constraintEqualToConstant:170],

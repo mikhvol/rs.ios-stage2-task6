@@ -71,7 +71,7 @@
         [self.fileThumbnailImageView.topAnchor constraintEqualToAnchor:self.fileNameLabel.bottomAnchor constant:20],
         [self.fileThumbnailImageView.leadingAnchor constraintEqualToAnchor:self.fileImageView.trailingAnchor constant:40],
         [self.fileSizeLabel.heightAnchor constraintEqualToConstant:20],
-        [self.fileSizeLabel.widthAnchor constraintEqualToConstant:100],
+        [self.fileSizeLabel.widthAnchor constraintEqualToConstant:150],
         [self.fileSizeLabel.topAnchor constraintEqualToAnchor:self.fileNameLabel.bottomAnchor constant:20],
         [self.fileSizeLabel.leadingAnchor constraintEqualToAnchor:self.fileThumbnailImageView.trailingAnchor constant:10]
     ]];
