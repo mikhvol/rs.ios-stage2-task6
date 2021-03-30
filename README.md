@@ -3,10 +3,11 @@ RSSchool iOS, stage 2, task6
 
 # Mini-app "Photo Gallery"
 
-![gal_One](https://user-images.githubusercontent.com/61166305/113026288-9326a180-9191-11eb-8fab-1e63cb80905e.JPG)
-![gal_Two](https://user-images.githubusercontent.com/61166305/113026304-9752bf00-9191-11eb-9689-9322cb7af93f.JPG)
-![gal_Three](https://user-images.githubusercontent.com/61166305/113026310-991c8280-9191-11eb-8204-87f027ea7141.JPG)
-![gal_Four](https://user-images.githubusercontent.com/61166305/113026313-9a4daf80-9191-11eb-8aba-9ff45c868ad1.JPG)
+![gal_One](https://user-images.githubusercontent.com/61166305/113026754-10521680-9192-11eb-9e53-3e981cbdc2b7.JPG)
+![gal_Two](https://user-images.githubusercontent.com/61166305/113026758-121bda00-9192-11eb-8b64-2fec819186e9.JPG)
+![gal_Three](https://user-images.githubusercontent.com/61166305/113026765-134d0700-9192-11eb-9c20-c57f40009fde.JPG)
+![gal_Four](https://user-images.githubusercontent.com/61166305/113026770-1516ca80-9192-11eb-90af-bfef2a0c0acd.JPG)
+
 
 
 
