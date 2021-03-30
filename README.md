@@ -12,10 +12,13 @@ RSSchool iOS, stage 2, task6
 * Simple elements of UiKit
 * StackView
 * UITableView & UICollectionView
+* UIActivityViewController
+* UIGestureRecongnizer
 * Autolayot
-* Animation
+* UIView Animation
 * PhotoKit
 * AVFoundation
+
 This app impleneted without storyboards.
 
 Task detail
