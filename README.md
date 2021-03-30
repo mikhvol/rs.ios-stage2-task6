@@ -1,7 +1,7 @@
 # rs.ios-stage2-task6
 RSSchool iOS, stage 2, task6
 
-# Mini-app "Photo Gallery"
+#               Mini-app "Photo Gallery"
 
 ![gal_One](https://user-images.githubusercontent.com/61166305/113026754-10521680-9192-11eb-9e53-3e981cbdc2b7.JPG)
 ![gal_Two](https://user-images.githubusercontent.com/61166305/113026758-121bda00-9192-11eb-8b64-2fec819186e9.JPG)
