@@ -8,10 +8,15 @@ RSSchool iOS, stage 2, task6
 ![gal_Three](https://user-images.githubusercontent.com/61166305/113026765-134d0700-9192-11eb-9c20-c57f40009fde.JPG)
 ![gal_Four](https://user-images.githubusercontent.com/61166305/113026770-1516ca80-9192-11eb-90af-bfef2a0c0acd.JPG)
 
-
-
-
-
+## Usage stack:
+* Simple elements of UiKit
+* StackView
+* UITableView & UICollectionView
+* Autolayot
+* Animation
+* PhotoKit
+* AVFoundation
+This app impleneted without storyboards.
 
 Task detail
 https://drive.google.com/file/d/1-6KO_XOh460RE1IkTFxZIw_VU-_ICixG/view
