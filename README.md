@@ -19,7 +19,7 @@ RSSchool iOS, stage 2, task6
 * PhotoKit
 * AVFoundation
 
-This app impleneted without storyboards.
+This app implemented without storyboards.
 
 Task detail
 https://drive.google.com/file/d/1-6KO_XOh460RE1IkTFxZIw_VU-_ICixG/view
