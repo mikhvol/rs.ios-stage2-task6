@@ -14,7 +14,7 @@ RSSchool iOS, stage 2, task6
 * UITableView & UICollectionView
 * UIActivityViewController
 * UIGestureRecongnizer
-* Autolayot
+* Autolayout
 * UIView Animation
 * PhotoKit
 * AVFoundation
