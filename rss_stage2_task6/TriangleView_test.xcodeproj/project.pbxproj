@@ -85,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F46F4D25270E59B700AF6296 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F471E280249D670800B30A52 /* AppDelegate.h */,
+				F471E281249D670800B30A52 /* AppDelegate.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		F471E274249D670800B30A52 = {
 			isa = PBXGroup;
 			children = (
@@ -104,16 +113,11 @@
 		F471E27F249D670800B30A52 /* TriangleView_test */ = {
 			isa = PBXGroup;
 			children = (
+				F46F4D25270E59B700AF6296 /* Support */,
 				F4C0AB4224A4FF210032FAB1 /* Custom Views */,
 				F4C0AB4124A4FEC00032FAB1 /* ViewControllers */,
 				F4B39C4B249E65D2004436B9 /* Extensions */,
 				F4B39C4A249E65A1004436B9 /* TabBarViewControllers */,
-				F471E280249D670800B30A52 /* AppDelegate.h */,
-				F471E281249D670800B30A52 /* AppDelegate.m */,
-				F438491724A3E94300BF4202 /* CellInfo.h */,
-				F438491824A3E94300BF4202 /* CellInfo.m */,
-				F42DFD4925DF0D9700F756B7 /* GalleryCollectionViewCell.h */,
-				F42DFD4A25DF0D9700F756B7 /* GalleryCollectionViewCell.m */,
 				F471E289249D670A00B30A52 /* Assets.xcassets */,
 				F471E28B249D670A00B30A52 /* LaunchScreen.storyboard */,
 				F471E28E249D670A00B30A52 /* Info.plist */,
@@ -168,6 +172,10 @@
 		F4C0AB4224A4FF210032FAB1 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				F42DFD4925DF0D9700F756B7 /* GalleryCollectionViewCell.h */,
+				F42DFD4A25DF0D9700F756B7 /* GalleryCollectionViewCell.m */,
+				F438491724A3E94300BF4202 /* CellInfo.h */,
+				F438491824A3E94300BF4202 /* CellInfo.m */,
 				F42DFD4E25E0575B00F756B7 /* CircleView.h */,
 				F42DFD4F25E0575B00F756B7 /* CircleView.m */,
 				F432D1BE25F0335A003F88B6 /* DivideLineView.h */,
